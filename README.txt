@@ -30,3 +30,8 @@ We only need five routes per model for our basic API, our `new` and `edit` GET r
 handled on the front end. Previously, in unit 2, we had to make pages that a user could visit to create and update a 
 resource (`new.ejs` / `edit.ejs`). Our MERN application delegates all HTML content to our React frontend. Our Express backend 
 is only concerned with serving data that will be consumed by the frontend application.
+
+
+
+URL: https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_ECOLOGIC_SP_NOCACHE_v1/MapServer/174/query?where=1%3D1&outFields=SiteName,InvasiveName,ObservationDate,InfestedArea,PlantDescription,AssessmentDate&outSR=4326&f=json
+https://geodata.vermont.gov/datasets/VTANR::invasive-species/api

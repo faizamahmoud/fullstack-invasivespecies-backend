@@ -35,6 +35,7 @@ router.post("/", async (req, res) => {
   });
 
 // SPECIES SHOW ROUTE
+// you dont need a show route on the backend because it will be on the front end
 // http://localhost:4040/invasiveSpecies/:id
 router.get("/:id", async (req, res) => {
     try {
@@ -48,11 +49,12 @@ router.get("/:id", async (req, res) => {
 
 
 // Species UPDATE ROUTE
+
 router.put("/:id", async (req, res) => {
 	try {
 	  // update Specie by ID
 	  res.json(
-		await Species.findByIdAndUpdate(req.params.id, req.body, {new:true})
+		await Species.findByIdAndUpdate(req.params.id, req.body, {new:true}) // (what do i want to update, what I want to update it to)
 	  );
 	} catch (error) {
 	  //send error

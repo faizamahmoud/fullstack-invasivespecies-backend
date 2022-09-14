@@ -46,7 +46,7 @@ mongoose.connection
 
 // MIDDLEWARE
 app.use(express.json()) //parse json before any routes
-app.use(cors());
+app.use(cors()); //configure to change editing access to just me , cors options
 app.use(morgan("dev")); //sends nice messages
 app.use('/invasiveSpecies', invasiveSpeciesController)
 ///////////////////////////////
